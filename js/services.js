@@ -7,8 +7,10 @@ angular.module('webApp', [])
         $scope.showApps = true;
     }
     
-    $scope.submit = function() {
-        console.log("Submitted");
+    $scope.submit = function(jobTitle, yrsOfExp) {
+        console.log("Job Title: ", jobTitle, "\nYears of Exp: ", yrsOfExp, " years");
+        $scope.jobTitle = jobTitle;
+        $scope.yrsOfExp = yrsOfExp;
     }
     
   }]);
