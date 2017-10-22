@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="webApp">
+  <head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/services.js"></script>
+      
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+  </head>
+  <body>
+    <title> Salary Comparisons </title>
+    <div class="appBody col-xs-12" ng-controller="webController" ng-cloak>
+        
+        <div ng-init="init()"></div>
+        <div class="errorBox"></div>
+        
+        <div ng-show="showApps">
+            
+            <div class="s-container">
+                <h1> Salary Comparisons </h1>
+                
+                
+                <form ng-submit="submit()">
+                    <input type="text" ng-model="jobTitle"  size="50"
+                           placeholder="Job Title">
+                    <input type="text" ng-model="yrsOfExp" size="50" placeholder="Years of Experience">
+                    
+                    <input class="btn-primary" type="submit" value="Submit">
+
+                </form>
+            </div>
+        
+        </div>
+        
+    </div>
+  </body>
+</html>
