@@ -14,3 +14,13 @@
     width: 1400px;
     height: 1400px;
 }
+
+.form {
+    padding: 20px;
+    text-align: inherit;
+}
+
+.formContent {
+    padding: 20px;
+    text-align: center;
+}
